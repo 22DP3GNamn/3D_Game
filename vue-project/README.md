@@ -13,7 +13,7 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ## Project Setup
 
 ```sh
-npm install
+
 ```
 
 ### Compile and Hot-Reload for Development
@@ -27,3 +27,4 @@ npm run dev
 ```sh
 npm run build
 ```
+npm install

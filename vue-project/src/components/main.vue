@@ -1,0 +1,354 @@
+<script setup>
+
+</script>
+
+<template>
+    
+    <header>
+            <nav>
+                <div class="nav-left">
+                    <span  class="brand-name">GAMESTOP</span>
+                </div>
+                <div class="hamburger" >&#9776;</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#" id="darkModeToggle" class="button"><span>Dark Mode</span></a>
+                    <div class="dropdown">
+                        <a class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="game1.html">Service1</a>
+                            <a href="game2.html">Service2</a>
+                            <a href="game3.html">Service3</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="button"><span>About</span></a>
+                    <a href="contact.html" class="button"><span>Contact</span></a>
+                    <a href="login.html" class="button"><span>Login</span></a>
+                </div>
+            </nav>
+        </header>
+
+    <div class="game-box">
+        <div class="game1">
+            <h1>3D Drifts</h1>
+            <h1>Spēle</h1>
+            <h2>Drifts on top</h2>
+            <p>Spēle, kur var sacensties drifta punktos</p>
+            <img src="./logo.png" alt="bilde" class="logo-image">
+            <a href="game1.html" class="button"><span>Spēlēt</span></a>
+        </div>
+        <div class="game2">
+            <h1>3D Drifts</h1>
+            <h1>Spēle</h1>
+            <h2>Drifts on top</h2>
+            <p>Spēle, kur var sacensties drifta punktos</p>
+            <img src="./logo.png" alt="bilde" class="logo-image">
+            <a href="game2.html" class="button"><span>Spēlēt</span></a>
+        </div>
+        <div class="game3">
+            <h1>3D Drifts</h1>
+            <h1>Spēle</h1>
+            <h2>Drifts on top</h2>
+            <p>Spēle, kur var sacensties drifta punktos</p>
+            <img src="./logo.png" alt="bilde" class="logo-image">
+            <a href="game3.html" class="button"><span>Spēlēt</span></a>
+        </div>
+        <div class="game1">
+            <h1>3D Drifts</h1>
+            <h1>Spēle</h1>
+            <h2>Drifts on top</h2>
+            <p>Spēle, kur var sacensties drifta punktos</p>
+            <img src="./logo.png" alt="bilde" class="logo-image">
+            <a href="game1.html" class="button"><span>Spēlēt</span></a>
+        </div>
+        <div class="game2">
+            <h1>3D Drifts</h1>
+            <h1>Spēle</h1>
+            <h2>Drifts on top</h2>
+            <p>Spēle, kur var sacensties drifta punktos</p>
+            <img src="./logo.png" alt="bilde" class="logo-image">
+            <a href="game2.html" class="button"><span>Spēlēt</span></a>
+        </div>
+        <div class="game3">
+            <h1>3D Drifts</h1>
+            <h1>Spēle</h1>
+            <h2>Drifts on top</h2>
+            <p>Spēle, kur var sacensties drifta punktos</p>
+            <img src="./logo.png" alt="bilde" class="logo-image">
+            <a href="game3.html" class="button"><span>Spēlēt</span></a>
+        </div>
+        <div class="game3">
+            <h1>3D Drifts</h1>
+            <h1>Spēle</h1>
+            <h2>Drifts on top</h2>
+            <p>Spēle, kur var sacensties drifta punktos</p>
+            <img src="./logo.png" alt="bilde" class="logo-image">
+            <a href="game3.html" class="button"><span>Spēlēt</span></a>
+        </div>
+    </div>
+
+        <aside>
+            <h2>Par mums</h2>
+            <p>Nekas jauns tikai taisu speli(viens pats), kuru nezinu vai izdarisu lidz galam</p>
+        </aside>
+
+        
+        <footer>
+            <a href="https://www.steam.com/">Steam</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.twitter.com/">Twitter</a>
+        </footer>
+
+</template>
+
+<style scoped>
+/* @import '//vue-project/src/assets/main.css';
+
+@import url('https://fonts.googleapis.com/css2? family=Source+Sans+Pro:wght@600&display=swap');
+/* https://www.youtube.com/watch?v=zPcvAwp71uA */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 */
+
+
+body {
+    z-index: -1;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.brand-name {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.logo-image {
+    width: 300px;
+    height: auto;
+}
+
+.game-box {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px 10px;
+    justify-items: center ;
+    transition: width 2s ease-in-out 1s;
+}
+
+.game1:hover, .game2:hover, .game3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background: linear-gradient(0deg, #ffffff, #686767);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+}
+
+.game1:not(:hover), .game2:not(:hover), .game3:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s, background 0.5s, box-shadow 0.5s;
+    background: linear-gradient(0deg, #ffffff, #686767);
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.1);
+}
+.game1, .game2, .game3 {
+    max-width: 300px;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(0deg, #ffffff, #ffffff);
+}
+
+.game-box a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000000;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: right;
+}
+
+a {
+    padding: 10px 40px;
+    border-radius: 15px;
+    margin-right: 12px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+nav a{
+    transform: translateX(-38px);
+}
+
+header {
+    background: linear-gradient(90deg, #000000, #c4c2c2);
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    max-width: 100%;
+    transition: background 0.8s ease-in-out 0.2s;
+    position: relative;
+    z-index: 10;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -14%;
+    width: 31%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: left 0.7s ease-in-out;
+    z-index:-1;
+}
+
+header:hover::before {
+    left: 66.7%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 4px 70px;
+    z-index: 1;
+}
+
+.dropbtn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dropbtn:hover, a:hover{
+    background-color: #7e7e7e;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transform: translateX(-75px);
+}
+
+aside {
+    margin-top: 10px;
+    margin-bottom: 150px;
+    width: 300px;
+    padding: 20px;
+    color: #fff;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #4e4e4e;
+    color: #fff;
+    position: bottom;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    bottom: 0;
+}
+
+
+
+
+.button {
+    padding: 10px 40px;
+    border-radius: 15px;
+    margin-right: 12px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #797979;
+    color: #fff;
+    transition: 0.5s;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #e0e0e0;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode .game-box {
+    background-color: #000000;
+}
+
+body.dark-mode .game1, body.dark-mode .game2, body.dark-mode .game3 {
+    background: linear-gradient(0deg, #333, #444);
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .game-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+</style>
